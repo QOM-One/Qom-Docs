@@ -4,30 +4,30 @@ order: 3
 
 # Accounts
 
-This document describes the in-built accounts system of Evmos. {synopsis}
+This document describes the in-built accounts system of Qom One. {synopsis}
 
 ## Pre-requisite Readings
 
 - [Cosmos SDK Accounts](https://docs.cosmos.network/main/basics/accounts.html) {prereq}
 - [Ethereum Accounts](https://ethereum.org/en/whitepaper/#ethereum-accounts) {prereq}
 
-## Evmos Accounts
+## Qom One Accounts
 
-Evmos defines its own custom `Account` type that uses Ethereum's ECDSA secp256k1 curve for keys. This
+Qom One defines its own custom `Account` type that uses Ethereum's ECDSA secp256k1 curve for keys. This
 satisfies the [EIP84](https://github.com/ethereum/EIPs/issues/84) for full [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) paths.
-The root HD path for Evmos-based accounts is `m/44'/60'/0'/0`.
+The root HD path for Qom One-based accounts is `m/44'/60'/0'/0`.
 
 +++ https://github.com/evmos/ethermint/blob/main/types/account.pb.go#L28-L33
 
 ## Addresses and Public Keys
 
-[BIP-0173](https://github.com/satoshilabs/slips/blob/master/slip-0173.md) defines a new format for segregated witness output addresses that contains a human-readable part that identifies the Bech32 usage. Evmos uses the following HRP (human readable prefix) as the base HRP:
+[BIP-0173](https://github.com/satoshilabs/slips/blob/master/slip-0173.md) defines a new format for segregated witness output addresses that contains a human-readable part that identifies the Bech32 usage. Qom One uses the following HRP (human readable prefix) as the base HRP:
 
 | Network   | Mainnet | Testnet |
 |-----------|---------|---------|
-| Evmos     | `evmos` | `evmos` |
+| Qom One     | `evmos` | `evmos` |
 
-There are 3 main types of HRP for the `Addresses`/`PubKeys` available by default on Evmos:
+There are 3 main types of HRP for the `Addresses`/`PubKeys` available by default on Qom One:
 
 - Addresses and Keys for **accounts**, which identify users (e.g. the sender of a `message`). They are derived using the **`eth_secp256k1`** curve.
 - Addresses and Keys for **validator operators**, which identify the operators of validators. They are derived using the **`eth_secp256k1`** curve.

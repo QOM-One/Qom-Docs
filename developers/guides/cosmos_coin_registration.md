@@ -4,7 +4,7 @@ order: 2
 
 # Cosmos Coin Registration
 
-Learn how to register native Cosmos Coins through [Evmos Governance](../../users/governance/overview.md). {synopsis}
+Learn how to register native Cosmos Coins through [Qom One Governance](../../users/governance/overview.md). {synopsis}
 
 :::tip
 **Note**: Not sure what the difference between Cosmos Coin and ERC-20 Registration is? You're in the right place if you want to add functionality to convert a native Cosmos Coin to an ERC-20 token representation. If an ERC-20 contract corresponding to your token already exists, and you want to add functionality to convert the ERC-20 token to a native Cosmos Coin denomination, check out [ERC-20 Registration](./erc20_registration.md) instead.
@@ -14,14 +14,14 @@ Still confused? Learn more about the differences [here](../../../x/erc20/spec/01
 
 The ERC-20 Module (also known as `x/erc20`) allows users to instantly convert [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20) tokens into native Cosmos Coins, and vice versa. This allows users to exchange assets interchangeably in two entirely different layers, the EVM and Cosmos.
 
-Application-wise, the ERC-20 module allows DeFi protocols to seamlessly integrate with Evmos and the Cosmos ecosystem. Using the module, developers can build smart contracts on Evmos and use the generated ERC-20 tokens for other [applications on the Cosmos ecosystem](https://mapofzones.com), such as:
+Application-wise, the ERC-20 module allows DeFi protocols to seamlessly integrate with Qom One and the Cosmos ecosystem. Using the module, developers can build smart contracts on Qom One and use the generated ERC-20 tokens for other [applications on the Cosmos ecosystem](https://mapofzones.com), such as:
 
 - earning $OSMO staking rewards
 - taking part in governance proposals by voting with $ATOM
 
 Registering a native Cosmos Coin means registering a new mapping between a Cosmos Coin denomination and a new ERC-20 token contract, also known as a Token Pair. Token Pairs enable users to convert ERC-20 tokens into their native Cosmos Coin representation (and vice-versa), and can only be created via a governance proposal.
 
-More information can be found in [this blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Evmos.
+More information can be found in [this blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Qom One.
 
 To register a Cosmos Coin, consider the following stages:
 
@@ -35,17 +35,17 @@ The following topics must be addressed when drafting a Cosmos Coin Proposal:
 
 2. Promote understanding of the ERC-20 Module.
 
-  Make sure to mention the original [blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.evmos.org/modules/erc20/)!
+  Make sure to mention the original [blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.qom.one/modules/erc20/)!
 
 3. Describe how ERC-20 Module changes will be made.
 
   Give a breakdown of the proposal's payload, and explain in layman terms what the proposal will do if it passes. Detail precautions taken during contract and proposal formulation, if applicable (including consultations made prior to proposal creation, how contracts were tested, and any third-party reviews). Finally, mention the risks involved in the proposal, depending on the direction of IBC Coin and ERC-20.
 
-Remember to provide links to the relevant [Commonwealth Evmos community](https://commonwealth.im/evmos) discussions concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
+Remember to provide links to the relevant [Commonwealth Qom One community](https://commonwealth.im/evmos) discussions concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
 
-## Adding Network to Evmos Chain Registry
+## Adding Network to Qom One Chain Registry
 
-All chain registry information can be found [here](https://github.com/evmos/chain-token-registry). The [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) is used to pull in the list of RPC, gRPC, and REST endpoints to power the Evmos Dashboard. To add chain registry information, please submit a pull request with the network details. Pull requests should be merged one business day after governance passes.
+All chain registry information can be found [here](https://github.com/evmos/chain-token-registry). The [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) is used to pull in the list of RPC, gRPC, and REST endpoints to power the Qom One Dashboard. To add chain registry information, please submit a pull request with the network details. Pull requests should be merged one business day after governance passes.
 
 ## Submitting the Cosmos Coin Proposal
 
@@ -137,11 +137,11 @@ A majority of the voting community should probably be aware of the proposal and 
 
 ### The Deposit Period
 
-The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (64 EVMOS), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 64 EVMOS), then this may be an opportunity for others to show their support by contributing (and risking) their EVMOS as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](../../users/governance/process.md#burned-deposits).
+The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (64 QOM ONE), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 64 QOM ONE), then this may be an opportunity for others to show their support by contributing (and risking) their QOM ONE as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](../../users/governance/process.md#burned-deposits).
 
 This is a stage where proposals may begin to get broader attention. Most popular explorers currently display proposals that are in the deposit period, but due to proposal spamming, this may change.
 
-A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote and EVMOS-holders that are staking.
+A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Qom One community to prepare validators to vote and QOM ONE-holders that are staking.
 
 ### The Voting Period
 

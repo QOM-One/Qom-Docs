@@ -4,7 +4,7 @@ order: 4
 
 # JSON-RPC Methods
 
-Check the JSON-RPC methods supported on Evmos. {synopsis}
+Check the JSON-RPC methods supported on Qom One. {synopsis}
 
 ## Pre-requisite Readings
 

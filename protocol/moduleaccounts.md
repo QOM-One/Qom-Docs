@@ -8,7 +8,7 @@ Some modules have their own module account. Think of this as a wallet that can o
 Below is a table of modules, their respective wallet addresses and permissions.
 
 Additionally, there are module accounts associated with IBC transfers.
-For each IBC connection, there's an account of type `ModuleAccount` used to escrow the transferred coins when Evmos is the source chain.
+For each IBC connection, there's an account of type `ModuleAccount` used to escrow the transferred coins when Qom One is the source chain.
 Their addresses are derived using the first 20 bytes of the SHA256 checksum of the account name and following the format as outlined in [ADR 028](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-028-public-key-addresses.md):
 
 ```go

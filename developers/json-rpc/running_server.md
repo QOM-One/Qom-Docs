@@ -4,7 +4,7 @@ order: 2
 
 # Running the Server
 
-Learn how to run and setup the JSON-RPC server on Evmos. {synopsis}
+Learn how to run and setup the JSON-RPC server on Qom One. {synopsis}
 
 :::tip
 **Important**: You cannot use all JSON RPC methods unless your node stores the entire copy of the blockchain locally. Do you need archives/snapshots of our networks? Go to [this section](https://docs.evmos.org/validators/snapshots_archives.html).
@@ -12,7 +12,7 @@ Learn how to run and setup the JSON-RPC server on Evmos. {synopsis}
 
 ## Introduction
 
-JSON-RPC is provided on multiple transports. Evmos supports JSON-RPC over HTTP and WebSocket.
+JSON-RPC is provided on multiple transports. Qom One supports JSON-RPC over HTTP and WebSocket.
 
 ## Requirements
 

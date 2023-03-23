@@ -4,14 +4,14 @@ order: 6
 
 # Geth JavaScript Console Guide
 
-Use this guide to learn how to set up and use the Geth JS console with an Evmos node. {synopsis}
+Use this guide to learn how to set up and use the Geth JS console with an Qom One node. {synopsis}
 
-Go-ethereum responds to instructions encoded as JSON objects as defined in the [JSON-RPC-API](https://geth.ethereum.org/docs/rpc/server). To perform and test these instructions, developers can use tools like curl. However, this is a low level and rather error-prone way to interact with the node. Most developers prefer to use convenient libraries that abstract away some of the more tedious and awkward tasks such as converting values from hexadecimal strings into numbers, or converting between denominations of ether (Wei, Gwei, etc). One such library is Web3.js. The purpose of Geth’s Javascript console is to provide a built-in environment to use a subset of the Web3.js libraries to interact with a Geth node. You can use this powerful tool to interact with an Evmos node too!
+Go-ethereum responds to instructions encoded as JSON objects as defined in the [JSON-RPC-API](https://geth.ethereum.org/docs/rpc/server). To perform and test these instructions, developers can use tools like curl. However, this is a low level and rather error-prone way to interact with the node. Most developers prefer to use convenient libraries that abstract away some of the more tedious and awkward tasks such as converting values from hexadecimal strings into numbers, or converting between denominations of ether (Wei, Gwei, etc). One such library is Web3.js. The purpose of Geth’s Javascript console is to provide a built-in environment to use a subset of the Web3.js libraries to interact with a Geth node. You can use this powerful tool to interact with an Qom One node too!
 
 ## Pre-requisite Readings
 
 - [Go-ethereum CLI](https://geth.ethereum.org/docs/interface/javascript-console) {prereq}
-- [Evmos (local) node](https://docs.evmos.org/developers/localnet/single_node.html) {prereq}
+- [Qom One (local) node](https://docs.evmos.org/developers/localnet/single_node.html) {prereq}
 
 ### Installing Go-Ethereum
 
@@ -42,7 +42,7 @@ GOROOT=/usr/local/go
 
 Make sure you have installed all the dependencies mentioned in the **[Pre-requisite Readings](#pre-requisite-readings)** section.
 
-## Run Evmos local node
+## Run Qom One local node
 
 - Clone the [evmos repository](https://github.com/evmos/evmos) (if you haven’t already)
 - Run the `local_node.sh` script to start a local node
@@ -73,7 +73,7 @@ To exit, press ctrl-d or type exit
 
 ## Use JSON-RPC methods
 
-Now we can use all implemented JSON-RPC methods. Find an exhaustive list of the supported JSON-RPC methods on [Evmos docs](https://docs.evmos.org/developers/json-rpc/endpoints.html).
+Now we can use all implemented JSON-RPC methods. Find an exhaustive list of the supported JSON-RPC methods on [Qom One docs](https://docs.evmos.org/developers/json-rpc/endpoints.html).
 
 Below are some examples of how to use the console.
 
@@ -115,7 +115,7 @@ Check any account balance using the `eth.getBalance` method:
 9.9999e+25
 ```
 
-We get a big number because the result is denominated in `aevmos`. We can convert to Evmos (10 ^18 `aevmos`) using the `web3.fromWei` method:
+We get a big number because the result is denominated in `aevmos`. We can convert to Qom One (10 ^18 `aevmos`) using the `web3.fromWei` method:
 
 ```javascript
 > web3.fromWei(eth.getBalance(eth.accounts[0]),"ether")
@@ -124,7 +124,7 @@ We get a big number because the result is denominated in `aevmos`. We can conver
 
 ### Send transactions
 
-We can perform token transfers using the corresponding method. For example, let's transfer 1 Evmos token from our account to another account:
+We can perform token transfers using the corresponding method. For example, let's transfer 1 Qom One token from our account to another account:
 
 ```javascript
 > eth.sendTransaction({from:eth.accounts[0], to: eth.accounts[1], value: web3.toWei(1, "ether")})
@@ -135,14 +135,14 @@ As a response, we get back the transaction hash.
 
 Now we can check the balance of the sender and receiver accounts.
 
-The sender balance is reduced by 1 Evmos token and the fees paid for the transaction:
+The sender balance is reduced by 1 Qom One token and the fees paid for the transaction:
 
 ```javascript
 > web3.fromWei(eth.getBalance(eth.accounts[0]),"ether")
 99998998.999990548370552
 ```
 
-The receiver account balance initially was 100000000 Evmos tokens. After the transaction, the account balance has increased by 1 Evmos token.
+The receiver account balance initially was 100000000 Qom One tokens. After the transaction, the account balance has increased by 1 Qom One token.
 
 ```javascript
 > web3.fromWei(eth.getBalance(eth.accounts[1]),"ether")

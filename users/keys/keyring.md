@@ -38,7 +38,7 @@ By default, the keyring generates a `eth_secp256k1` key. The keyring also suppor
 :::
 
 ::: warning
-**NOTE**: Cosmos `secp256k1` keys are not supported on Evmos due to compatibility issues with Ethereum transactions.
+**NOTE**: Cosmos `secp256k1` keys are not supported on Qom One due to compatibility issues with Ethereum transactions.
 :::
 
 ## Keyring Backends
