@@ -41,11 +41,11 @@ Many proposals allow for long form text to be included, usually under the key `d
 
 ### Text Proposals
 
-`TextProposal`s are used by delegators to agree to a certain strategy, plan, commitment, future upgrade, or any other statement in the form of text. Aside from having a record of the proposal outcome on the Evmos chain, a text proposal has no direct effect on Evmos.
+`TextProposal`s are used by delegators to agree to a certain strategy, plan, commitment, future upgrade, or any other statement in the form of text. Aside from having a record of the proposal outcome on the Qom One chain, a text proposal has no direct effect on qom_766-1.
 
 #### Real Example
 
-[Proposal 1](https://commonwealth.im/evmos/proposal/1-airdrop-claim-mission) was representative of one of four core network activities that users had to participate in to claim tokens from the Evmos Rektdrop.
+[Proposal 1](https://commonwealth.im/evmos/proposal/1-airdrop-claim-mission) was representative of one of four core network activities that users had to participate in to claim tokens from the Qom One Rektdrop.
 
 ```json
 {
@@ -61,7 +61,7 @@ For community pool spend proposals, there are five components:
 
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. **Recipient** - the Evmos (bech32-based) address that will receive funding from the Community Pool
+3. **Recipient** - the Qom One (bech32-based) address that will receive funding from the Community Pool
 4. **Amount** - the amount of funding that the recipient will receive in atto-EVMOS (`aevmos`)
 5. **Deposit** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal
 
@@ -91,7 +91,7 @@ The `deposit` of `192000000000000000000aevmos` results in 192 EVMOS being used f
 
 #### Real Example
 
-This is a governance protocol which [Flux Protocol](https://www.fluxprotocol.org/), the provider of a cross-chain oracle which provides smart contracts with access to economically secure data feeds, submitted to cover costs of the subsidizied FPO (First Party Oracle) solution which they deployed on the Evmos mainnet.
+This is a governance protocol which [Flux Protocol](https://www.fluxprotocol.org/), the provider of a cross-chain oracle which provides smart contracts with access to economically secure data feeds, submitted to cover costs of the subsidizied FPO (First Party Oracle) solution which they deployed on the Qom One mainnet.
 
 Users can query the proposal details with the `qomd` command-line interface using this command:
 
@@ -101,7 +101,7 @@ Users can query the proposal details with the `qomd` command-line interface usin
 
 ```json
 {
-  "title": "Grant proposal for Flux Protocol an oracle solution live on Evmos",
+  "title": "Grant proposal for Flux Protocol an oracle solution live on Qom One",
   "description": "proposal: https://gateway.pinata.cloud/ipfs/QmfZknL4KRHvJ6XUDwtyRKANVs44FFmjGuM8YbArqqfWwF discussion: https://commonwealth.im/evmos/discussion/4915-evmos-grant-flux-oracle-solution",
   "recipient": "evmos15dxa2e3lc8zvmryv62x3stt86yhplu2vs9kxct",
   "amount": [
@@ -124,7 +124,7 @@ For parameter-change proposals, there are seven components:
 
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. **Subspace** - the Evmos module with the parameter that is being changed
+3. **Subspace** - the Qom One module with the parameter that is being changed
 4. **Key** - the parameter that will be changed
 5. **Value** - the value of the parameter that will be changed by the governance mechanism
 6. **Denom** - `aevmos` (atto-EVMOS) will be the type of asset used as the deposit
@@ -132,7 +132,7 @@ For parameter-change proposals, there are seven components:
 
 #### Real Example
 
-In the example below, a network explorer listed the governance proposal by its title: "Increase the minimum deposit for governance proposals." When a user selects the proposal, they'll see the proposal’s description. This proposal can be [found on the Evmos network here](https://commonwealth.im/evmos/proposal/7-increase-the-minimum-deposit-for-governance-proposals).
+In the example below, a network explorer listed the governance proposal by its title: "Increase the minimum deposit for governance proposals." When a user selects the proposal, they'll see the proposal’s description. This proposal can be [found on the Qom One network here](https://commonwealth.im/evmos/proposal/7-increase-the-minimum-deposit-for-governance-proposals).
 
 Not all explorers will show the proposed parameter changes that are coded into the proposal, so the delegator should verify that the description aligns with what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
 
@@ -183,7 +183,7 @@ qomd tx gov submit-legacy-proposal \
 Use the `evmos tx gov --help` flag to get more info about the governance commands
 :::
 
-1. `qomd` is the command-line interface client that is used to send transactions and query Evmos
+1. `qomd` is the command-line interface client that is used to send transactions and query Qom One
 2. `tx gov submit-legacy-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
 3. `--from dev0` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
@@ -191,9 +191,10 @@ Use the `evmos tx gov --help` flag to get more info about the governance command
    - if this number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
    - the transaction will only use the amount of gas needed to process the transaction
 5. `--gas-prices` is the flat-rate per unit of gas value for a validator to process your transaction
-6. `--chain-id evmos_9001-2` is Evmos Mainnet. For current and past chain-id's, please look at the [Chain ID](./../technical_concepts/chain_id.md) documentation.
-   - the testnet chain ID is [evmos_9000-4](https://testnet.mintscan.io/evmos). For current and past testnet information, please look at the [testnet repository](https://github.com/evmos/testnets)
-7. `--node` is using a full node to send the transaction to the Evmos Mainnet
+6. `--chain-id qom_766-1` is Qom One Mainnet. For current and past chain-id's, please look at the [Chain ID](./../technical_concepts/chain_id.md) documentation.
+   - the testnet chain ID is [evmos_9000-4](https://ping.testnet.qom.one
+). For current and past testnet information, please look at the [testnet repository](https://github.com/evmos/testnets)
+7. `--node` is using a full node to send the transaction to the Qom One Mainnet
 
 ### Verifying your transaction
 

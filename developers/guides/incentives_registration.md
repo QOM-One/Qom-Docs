@@ -4,7 +4,7 @@ order: 5
 
 # Smart Contract Incentive Registration
 
-Learn how to register smart contract incentives through [Evmos Governance](../../users/governance/overview.md). {synopsis}
+Learn how to register smart contract incentives through [Qom One Governance](../../users/governance/overview.md). {synopsis}
 
 An incentive for a smart contract can be registered through governance to encourage more interaction with that contract. Users who interact with a registered contract (eg. through submission of transactions) will have rewards distributed to them. These rewards are essentially cash-back for the gas spent on the initial transactions.
 
@@ -32,13 +32,13 @@ The following topics must be addressed when drafting a Contract Incentives Propo
 
 2. Promote understanding of the `x/incentives` Module.
 
-    Make sure to mention the [`x/incentives` Module Documentation](../../../x/incentives/spec/README.md) along with a brief explanation of what the `x/incentives` Module does. It's also a good idea to link the [Evmos Token Model](https://medium.com/evmos/the-evmos-token-model-edc07014978b), since incentives are directly intertwined with Evmos tokenomics!
+    Make sure to mention the [`x/incentives` Module Documentation](../../../x/incentives/spec/README.md) along with a brief explanation of what the `x/incentives` Module does. It's also a good idea to link the [Qom One Token Model](https://medium.com/evmos/the-evmos-token-model-edc07014978b), since incentives are directly intertwined with Qom One tokenomics!
 
 3. Describe what changes are being made, and why they are required.
 
     Give a breakdown of the proposal's payload, and explain in layman's terms what the proposal will do if it passes. For the smart contract in question, provide general information on its purpose, along with an argument for why it requires incentives. Mention risks involved in the proposal, depending on the traction of the smart contract involved and the timetable for the proposed incentives. Finally, detail precautions taken during proposal formulation, if applicable (including consultations made prior to proposal creation, and any third-party reviews).
 
-Remember to provide links to the relevant [Commonwealth Evmos community](https://commonwealth.im/evmos) discussions concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
+Remember to provide links to the relevant [Commonwealth Qom One community](https://commonwealth.im/evmos) discussions concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
 
 ## Submitting the Contract Incentives Proposal
 
@@ -102,11 +102,11 @@ A majority of the voting community should probably be aware of the proposal and 
 
 ### The Deposit Period
 
-The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (64 EVMOS), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 64 EVMOS), then this may be an opportunity for others to show their support by contributing (and risking) their EVMOS as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](../../users/governance/process.md#burned-deposits).
+The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (64 QOM), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 64 QOM), then this may be an opportunity for others to show their support by contributing (and risking) their QOM as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](../../users/governance/process.md#burned-deposits).
 
 This is a stage where proposals may begin to get broader attention. Most popular explorers currently display proposals that are in the deposit period, but due to proposal spamming, this may change.
 
-A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote and EVMOS-holders that are staking.
+A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Qom One community to prepare validators to vote and QOM-holders that are staking.
 
 ### The Voting Period
 
@@ -128,7 +128,7 @@ To enable telemetrics, set `telemetry.enabled = true` in the `app.toml` config f
 
 ### Incentive Metrics
 
-Evmos supports the following metrics related to the `x/incentives` module, which can be collected for incentive analysis:
+Qom One supports the following metrics related to the `x/incentives` module, which can be collected for incentive analysis:
 
 | Metric                                         | Description                                                                         | Unit        | Type    |
 | :--------------------------------------------- | :---------------------------------------------------------------------------------- | :---------- | :------ |
@@ -146,4 +146,4 @@ In addition, gRPC queries related to the `x/incentives` module found [here](../.
 See the telemetry sources below for details not covered above:
 
 - [Cosmos SDK Telemetry Documentation](https://docs.cosmos.network/main/core/telemetry.html)
-- [Evmos Supported Telemetry Metrics](https://docs.evmos.org/protocol/telemetry.html)
+- [Qom One Supported Telemetry Metrics](https://docs.evmos.org/protocol/telemetry.html)

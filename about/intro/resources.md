@@ -4,7 +4,7 @@ order: 3
 
 # Resources
 
-Learn about Evmos with the list of official resources. {synopsis}
+Learn about Qom One with the list of official resources. {synopsis}
 
 ::: tip
 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
@@ -14,7 +14,7 @@ This documentation page is currently under work in progress.
 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
 :::
 
-- Documentation (this site): [https://docs.evmos.org/](https://docs.evmos.org/)
+- Documentation (this site): [https://docs.qom.one/](https://docs.qom.one/)
 - Open Source Codebase: [https://github.com/evmos/evmos](https://github.com/evmos/evmos)
 - Website: [https://evmos.org/](https://evmos.org/)
 - Blog: [https://evmos.blog/](https://evmos.blog/)
@@ -53,4 +53,4 @@ Note: most of these articles are outdated as they refer to the previous Ethermin
 
 ## Next {hide}
 
-Learn how to run an Evmos [node](./../../validators/quickstart/run_node.md) {hide}
+Learn how to run an Qom One [node](./../../validators/quickstart/run_node.md) {hide}

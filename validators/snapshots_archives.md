@@ -4,11 +4,11 @@ order: 6
 
 # Snapshots & Archive Nodes
 
-Quickly sync your node with Evmos using a snapshot or serve queries for prev versions using archive nodes {synopsis}
+Quickly sync your node with Qom One using a snapshot or serve queries for prev versions using archive nodes {synopsis}
 
 ## List of Snapshots and Archives
 
-Below is a list of publicly available snapshots that you can use to sync with the Evmos mainnet and
+Below is a list of publicly available snapshots that you can use to sync with the Qom One mainnet and
 archived [9001-1 mainnet](https://github.com/evmos/mainnet/tree/main/evmos_9001-1):
 
 <!-- markdown-link-check-disable -->
@@ -19,8 +19,8 @@ archived [9001-1 mainnet](https://github.com/evmos/mainnet/tree/main/evmos_9001-
 | -------------|------------------------------------------------------------------------ |
 | `Staketab`   | [github.com/staketab/nginx-cosmos-snap](https://github.com/staketab/nginx-cosmos-snap/blob/main/docs/evmos.md) |
 | `Polkachu`   | [polkachu.com](https://www.polkachu.com/tendermint_snapshots/evmos)                   |
-| `Nodes Guru` | [snapshots.nodes.guru/evmos_9001-2/](snapshots.nodes.guru/evmos_9001-2/)                   |
-| `Notional`   | [mainnet/pruned/evmos_9001-2(pebbledb)](https://snapshot.notional.ventures/evmos/) <br> [mainnet/archive/evmos_9001-2(pebbledb)](https://snapshot.notional.ventures/evmos-archive/) <br> [testnet/archive/qom_7668378(pebbledb)](https://snapshot.notional.ventures/evmos-testnet-archive/)                   |
+| `Nodes Guru` | [snapshots.nodes.guru/qom_766-1/](snapshots.nodes.guru/evmos_9001-2/)                   |
+| `Notional`   | [mainnet/pruned/qom_766-1(pebbledb)](https://snapshot.notional.ventures/evmos/) <br> [mainnet/archive/evmos_9001-2(pebbledb)](https://snapshot.notional.ventures/evmos-archive/) <br> [testnet/archive/qom_7668378(pebbledb)](https://snapshot.notional.ventures/evmos-testnet-archive/)                   |
 
 ### Archives
 <!-- markdown-link-check-disable -->
@@ -31,7 +31,7 @@ archived [9001-1 mainnet](https://github.com/evmos/mainnet/tree/main/evmos_9001-
 | `Polkachu`     | [polkachu.com/tendermint_snapshots/evmos](https://www.polkachu.com/tendermint_snapshots/evmos)                           |
 | `Forbole`      | [bigdipper.live/evmos_9001-1](https://s3.bigdipper.live.eu-central-1.linodeobjects.com/evmos_9001-1.tar.lz4) |
 
-To access snapshots and archives, follow the process below (this code snippet is to access a snapshot of the current network, `evmos_9001-2`, from Nodes Guru):
+To access snapshots and archives, follow the process below (this code snippet is to access a snapshot of the current network, `qom_766-1`, from Nodes Guru):
 
 ```bash
 cd $HOME/.qomd/data

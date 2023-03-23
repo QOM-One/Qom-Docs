@@ -10,7 +10,7 @@ Usage:
 The different downloaded files need different adjustments. The following functionality
 can be executed by passing the corresponding flags:
 
-  - `--header`: Formats the markdown header 1 to fit the rest of the Evmos and Ethermint docs
+  - `--header`: Formats the markdown header 1 to fit the rest of the Qom One and Ethermint docs
   - `--order [POSITION]`: Adds a HTML command specifying the desired position in the sub-folder order
   - `--title [TITLE]`: Specifies the shown page title in the generated docs
   - `--parent [PARENT]`: Specifies the parent tile in the dropdown menu of the generated docs
@@ -71,7 +71,7 @@ def main():
 def format_header_in_file(file: str) -> None:
     """
     format_header_in_file will adjust the formatting in the file at the given path to
-    match the Evmos and Ethermint docs.
+    match the Qom One and Ethermint docs.
     Additionally, it will remove all lines before the markdown header 1, because the
     docusaurus commands (like sidebar_position) are not interpreted in our setup.
 
@@ -126,7 +126,7 @@ def add_metadata(file: str, position: int, title: str, parent: str) -> None:
     """
     add_metadata adds lines to the beginning of the markdown file at the given path, which
     specify the position in the sub-folder order and define a title and parent title
-    (which are used for the 'Modules' dropdown on the Evmos docs).
+    (which are used for the 'Modules' dropdown on the Qom One docs).
 
     :param file: path to the markdown file to be adjusted.
     :param position: integer value of the desired position

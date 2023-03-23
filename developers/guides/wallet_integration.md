@@ -4,7 +4,7 @@ order: 1
 
 # Wallet Integration
 
-Learn how to properly integrate [Metamask](https://metamask.io/) or [Keplr](https://www.keplr.app/) with a dApp on Evmos. {synopsis}
+Learn how to properly integrate [Metamask](https://metamask.io/) or [Keplr](https://www.keplr.app/) with a dApp on Qom One. {synopsis}
 
 :::tip
 **Note**: want to learn more about wallet integration beyond what's covered here? Check out both the [MetaMask Wallet documentation](https://docs.metamask.io/guide/) and [Keplr Wallet documentation](https://docs.keplr.app/).
@@ -45,7 +45,7 @@ After the user's wallet type has been determined, developers can proceed with cr
 #### Create the Transaction
 
 :::tip
-**Note**: The example below uses the Evmos Testnet `chainID`. For more info, check the Evmos Chain IDs reference document [here](../../users/technical_concepts/chain_id.md).
+**Note**: The example below uses the Qom One Testnet `chainID`. For more info, check the Qom One Chain IDs reference document [here](../../users/technical_concepts/chain_id.md).
 :::
 
 Developers can create `MsgSend` transactions using the [evmosjs](../libraries/evmosjs.md) library.
@@ -91,7 +91,7 @@ const msg = createMessageSend(chain, sender, fee, memo, params)
 <!-- textlint-disable -->
 After creating the transaction, developers need to send the payload to the appropriate wallet to be signed ([`msg.signDirect`](https://docs.keplr.app/api/#sign-direct-protobuf) is the transaction in Keplr format, and `msg.eipToSign` is the [`EIP712`](https://eips.ethereum.org/EIPS/eip-712) data to sign with MetaMask).
 
-With the signature, we add a Web3Extension to the transaction and broadcast it to the Evmos node.
+With the signature, we add a Web3Extension to the transaction and broadcast it to the Qom One node.
 
 <!-- textlint-enable -->
 ```js
@@ -219,4 +219,4 @@ async function signAndBroadcastEthereumTx() {
 
 ### Connections
 
-For Ethereum RPC, Evmos gRPC, and/or REST queries, dApp developers should implement providers client-side, and store RPC details in the environment variable as secrets.
+For Ethereum RPC, Qom One gRPC, and/or REST queries, dApp developers should implement providers client-side, and store RPC details in the environment variable as secrets.

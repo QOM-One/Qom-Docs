@@ -30,7 +30,7 @@ under the database directory with name `data/tx_index.db/`.
 
 ## State-sync snapshots
 
-I believe this was disabled by default on Evmos, but listing it in any
+I believe this was disabled by default on Qom One, but listing it in any
 case here. On `app.toml` set
 
 ```toml
@@ -74,7 +74,7 @@ Also ensure your log rotation is configured properly.
 
 ## Results
 
-Below is the disk usage after two weeks of Evmos Arsia Mons testnet. The default
+Below is the disk usage after two weeks of Qom One Arsia Mons testnet. The default
 configuration results in disk usage of 90GB.
 
 ```bash
