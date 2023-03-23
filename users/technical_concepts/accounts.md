@@ -17,7 +17,7 @@ Evmos defines its own custom `Account` type that uses Ethereum's ECDSA secp256k1
 satisfies the [EIP84](https://github.com/ethereum/EIPs/issues/84) for full [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) paths.
 The root HD path for Evmos-based accounts is `m/44'/60'/0'/0`.
 
-+++ https://github.com/evmos/ethermint/blob/main/types/account.pb.go#L28-L33
++++ https://github.com/qom/ethermint/blob/main/types/account.pb.go#L28-L33
 
 ## Addresses and Public Keys
 
@@ -25,7 +25,7 @@ The root HD path for Evmos-based accounts is `m/44'/60'/0'/0`.
 
 | Network   | Mainnet | Testnet |
 |-----------|---------|---------|
-| Evmos     | `evmos` | `evmos` |
+| Evmos     | `qom` | `qom` |
 
 There are 3 main types of HRP for the `Addresses`/`PubKeys` available by default on Evmos:
 
@@ -35,13 +35,13 @@ There are 3 main types of HRP for the `Addresses`/`PubKeys` available by default
 
 |                    | Address bech32 Prefix | Pubkey bech32 Prefix | Curve           | Address byte length | Pubkey byte length |
 |--------------------|-----------------------|----------------------|-----------------|---------------------|--------------------|
-| Accounts           | `evmos`               | `evmospub`           | `eth_secp256k1` | `20`                | `33` (compressed)  |
+| Accounts           | `qom`               | `evmospub`           | `eth_secp256k1` | `20`                | `33` (compressed)  |
 | Validator Operator | `evmosvaloper`        | `evmosvaloperpub`    | `eth_secp256k1` | `20`                | `33` (compressed)  |
 | Consensus Nodes    | `evmosvalcons`        | `evmosvalconspub`    | `ed25519`       | `20`                | `32`               |
 
 ## Address formats for clients
 
-`EthAccount` can be represented in both [Bech32](https://en.bitcoin.it/wiki/Bech32) (`evmos1...`) and hex (`0x...`) formats for Ethereum's Web3 tooling compatibility.
+`EthAccount` can be represented in both [Bech32](https://en.bitcoin.it/wiki/Bech32) (`qom1...`) and hex (`0x...`) formats for Ethereum's Web3 tooling compatibility.
 
 The Bech32 format is the default format for Cosmos-SDK queries and transactions through CLI and REST
 clients. The hex format on the other hand, is the Ethereum `common.Address` representation of a
@@ -59,11 +59,11 @@ The `qomd debug addr <address>` can be used to convert an address between hex an
 <CodeGroupItem title="Bech32">
 
 ```bash
- $ qomd debug addr evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
+ $ qomd debug addr qom1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
   Address: [20 87 74 109 255 45 223 158 7 130 139 67 69 211 4 9 25 175 86 82]
   Address (hex): 14574A6DFF2DDF9E07828B4345D3040919AF5652
-  Bech32 Acc: evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
-  Bech32 Val: evmosvaloper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
+  Bech32 Acc: qom1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
+  Bech32 Val: qomvaloper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
 ```
 
 </CodeGroupItem>
@@ -73,8 +73,8 @@ The `qomd debug addr <address>` can be used to convert an address between hex an
  $ qomd debug addr 14574A6DFF2DDF9E07828B4345D3040919AF5652
   Address: [20 87 74 109 255 45 223 158 7 130 139 67 69 211 4 9 25 175 86 82]
   Address (hex): 14574A6DFF2DDF9E07828B4345D3040919AF5652
-  Bech32 Acc: evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
-  Bech32 Val: evmosvaloper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
+  Bech32 Acc: qom: 1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw
+  Bech32 Val: qom:/ valoper1z3t55m0l9h0eupuz3dp5t5cypyv674jjn4d6nn
 ```
 
 </CodeGroupItem>
