@@ -115,7 +115,7 @@ module.exports = {
             },
             {
               title: "QOM ONE Ecosystem",
-              path: "https://evmos.org/ecosystem",
+              path: "https://linktr.ee/qomlinks",
             },
           ],
         },
